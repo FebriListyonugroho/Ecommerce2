@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="175dp"
+        android:layout_height="200dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:cardElevation="15dp">
+
+    <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="200dp">
+
+
+
+        <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="165dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="120dp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="2dp"/>
+
+        <TextView
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_image"
+                android:layout_marginTop="10dp"
+                android:text="Product Price"
+                android:layout_marginStart="5dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+        <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:layout_below="@id/product_price"
+                android:layout_marginStart="5dp"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+        <LinearLayout
+                android:id="@+id/r6"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location"
+                    android:layout_marginLeft="2dp"
+                   android:layout_marginRight="3dp"/>
+            <TextView
+                    android:id="@+id/product_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/icon"
+                    android:gravity="fill_vertical"
+                    android:layout_marginStart="5dp"
+                    android:text="Alamat"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Pembeli.MainActivity"
+        android:background="@drawable/welcome">
+
+    <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/applogo"/>
+
+    <TextView
+            android:id="@+id/app_slogan"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="88dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/make_with_kotlin"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"/>
+
+    <Button
+            android:id="@+id/main_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_above="@id/seller_begin"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttons"
+            android:padding="20dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="@string/already_have_an_account_login"
+            android:textColor="@android:color/white"/>
+
+    <Button
+            android:id="@+id/main_join_now_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_login_btn"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/input_design"
+            android:padding="20dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="@string/join_now"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+            android:id="@+id/seller_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Penjual ?"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="10dp"/>
+
+</RelativeLayout>

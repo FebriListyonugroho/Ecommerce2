@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardElevation="15dp">
+        tools:context=".AdminMaintainProductsActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/product_image_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="2dp"/>
+
+        <EditText
+                android:id="@+id/product_name_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_image_maintain"
+                android:hint="Product Name"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:padding="12dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input_design"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+                android:id="@+id/product_price_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_name_maintain"
+                android:hint="Product Price"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:padding="12dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input_design"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:id="@+id/product_description_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_price_maintain"
+            android:hint="Product Description"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/input_design"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+                android:id="@+id/product_alamat_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_description_maintain"
+                android:hint="Product Address"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:padding="12dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/input_design"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        <Button
+                android:id="@+id/aplly_change_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_alamat_maintain"
+                android:text="Update Iklan"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:padding="12dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/buttons"
+                android:textColor="@android:color/white"/>
+
+        <Button
+                android:id="@+id/delete_product_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aplly_change_btn"
+                android:text="Hapus Iklan"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:padding="12dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/buttons"
+                android:textColor="@android:color/white"/>
+
+        <Spinner android:layout_width="match_parent"
+                 android:layout_height="wrap_content"></Spinner>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

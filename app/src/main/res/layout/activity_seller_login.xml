@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Penjual.SellerLoginActivity">
+
+    <ImageView
+            android:id="@+id/img_seller"
+            android:src="@drawable/sellerlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"/>
+
+    <TextView
+            android:id="@+id/title_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Login Penjual"
+            android:layout_below="@+id/img_seller"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/holo_green_light"/>
+
+    <EditText
+            android:id="@+id/seller_login_email"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_seller"
+            android:hint="Email"
+            android:inputType="text"
+            android:textSize="16dp"/>
+
+    <EditText
+            android:id="@+id/seller_login_password"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seller_login_email"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16dp"/>
+
+    <Button
+            android:id="@+id/seller_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/seller_login_password"
+            android:textAllCaps="false"
+            android:text="Masuk"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"/>
+
+</RelativeLayout>
